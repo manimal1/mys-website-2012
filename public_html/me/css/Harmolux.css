@@ -1,0 +1,457 @@
+@charset "utf-8";
+
+@import url('/css/Reset.css');
+@import url('/css/Responsive.css');
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,400italic,600italic,600,700,700italic,900,900italic,300italic&subset=latin,latin-ext');
+
+*{ 
+	margin:0; 
+	padding:0; 
+}
+html{
+	width:100%;
+	height:100%;
+}
+body{
+	width:100%;
+	height:100%;
+	position:relative;
+	background-color:#fff;
+	font-size:13px;
+	color:#0a2234;
+    font-family: 'UbuntuRegular';
+}
+a{
+	text-decoration:none;
+	color:#0a2234;
+}
+a:hover{
+	text-decoration:none;
+	color:#b79447;
+}
+h1{
+	font-size:24px;
+    font-family: 'UbuntuLight';
+}
+h2{
+	font-size:18px;
+    font-family: 'UbuntuLight';
+}
+h3{
+	font-size:16px;
+    font-family: 'UbuntuLight';
+}
+h4{
+	font-size:20px;
+}
+.navMob{
+	display:none;
+}
+nav{
+	position:relative;
+	color:#fff;
+	height:45px;
+	margin:0px auto;
+	width:100%;
+	height:220px;
+	background:transparent url(/images/NavPozadina.png) repeat-x center top;
+	z-index:100;
+}
+*+html nav{
+	z-index:100;
+}
+nav #NavMenu{
+	overflow:visible;
+   	position: relative;
+}
+nav #NavLogo{
+	position:relative;
+	top:20px;
+}
+nav #NavJezici{
+	position:absolute;
+	top:20px;
+	right:0px;
+	width:120px;
+	text-align:right;
+}
+nav ul { 
+	position:relative;
+	padding:0;
+	top:45px;
+	height:85px;
+	list-style:none;	
+	display:inline-table;
+	cursor:pointer;
+	z-index:100;
+	text-transform:uppercase;
+}
+nav ul ul {
+	display: none;
+}
+	nav ul li:hover > ul {
+		display: block;
+	}
+	nav ul:after {
+		content: ""; 
+		clear: both; 
+		display: block;
+	}
+	nav ul li { 
+		padding:50px 0 1px 50px;
+		float: left;
+		height:35px;
+	}
+		nav ul li:hover {
+				}
+			nav ul li:hover a {
+				
+			}
+			nav ul li:hover > ul li a{
+				
+			}
+		nav ul li a {
+			display: block;
+			color:#000;
+			font-size:17px;
+			text-decoration: none;
+		}
+		nav ul li a:hover {
+			color:#b79447;
+			border-bottom:2px solid #d3c3a1; 
+		}
+	nav ul ul {
+		background-color:#fff;
+		border:1px solid #b79447;
+		height:auto;
+		margin:0;
+		border-radius: 0; 
+		padding: 0 10px 0 10px;
+		position: absolute; 
+		top: 100%;
+		width:300px;
+		z-index:40;
+		text-transform:none;
+	}
+		nav ul ul li { 
+			height:100%;
+			margin:10px 0;
+			float: none; 
+			padding:0 0 5px 0;
+			position: relative;
+			border-right:0px solid #dfdfdf;
+			border-bottom:1px solid #b79447;
+		}
+		nav ul ul li:last-child { 
+			height:20px;
+			padding:0;
+			border-bottom:0px solid #dfdfdf;
+		}
+			nav ul ul li a {
+				font-size:14px;
+				padding: 0;
+				color:#000;
+			}	
+				nav ul ul li a:hover {
+				color:#b79447;
+				border-bottom:0px solid black;
+								}
+	nav ul ul ul {
+		position: absolute; left: 100%; top:0;
+	}
+header{
+	position:absolute;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	top:0px;
+	text-align:center;
+}
+header #Slider{
+	position:absolute;
+	margin:0 auto;
+	width:1450px;
+	overflow:hidden;
+    margin-left:-725px;
+    left:50%;
+}
+#IndexSadrzaj{
+	position:relative;
+	width:100%;
+	margin:0px auto;
+	margin-top:350px;
+	padding:30px 0;
+}
+#PonudaSadrzaj{
+	position:relative;
+	width:100%;
+	margin:0px auto;
+	padding:30px 0;
+}
+#IndexSadrzaj .eightcol a{
+	position:relative;
+	margin:0 10px;    
+	display:inline-block;
+}
+#IndexSadrzaj .eightcol p{
+	margin:10px 0;    
+}
+#ListaPonuda{
+	position:relative;
+	list-style:none;
+}
+#ListaPonuda li{
+	position:relative;
+	border-bottom:1px dotted #012544;
+	margin-top:10px;
+	padding-bottom:10px;
+	width:80%;
+}
+#ListaPonuda .Dezeni{
+	position:relative;
+	background:transparent url(/images/Dezeni.png) no-repeat center left;
+	margin-top:10px;
+	padding:10px 0 10px 10px;
+	width:80%;
+}
+#ListaPonuda .Dezeni a{
+	color:#fff;
+	font-size:18px;
+}
+#ListaPonuda li:last-child{
+	border-bottom:0px dotted #012544;
+}
+#ListaPonuda li a{
+	color:#012544;
+	font-size:18px;
+}
+#ListaPonuda li a:hover{
+	color:#cda349;
+}
+#ListaPonuda .Aktivna a{
+	color:#cda349;
+}
+.Opis{
+	position:relative;
+	margin-top:20px;
+}
+#PopUpBox{
+	position:relative;
+	width:660px;
+	height:700px;
+	background:transparent url(/images/PopUp.png) no-repeat right center;
+	padding:20px;
+	color:#fff;
+}
+#PopUpBox .galleria{
+	position:relative;
+	margin:0px auto;
+	width:650px;
+}
+#PopUpBox .OpisPopUp{
+	position:relative;
+	margin:0px auto;
+	margin-top:20px;
+	width:650px;
+}
+#SlidesSlike{
+	position:relative;
+	text-align:center;
+}
+#DezenIme{
+	font-size:16px;
+	text-align:left;
+}
+.katalozi div{
+	margin-bottom:20px;
+	border-bottom:2px solid #d3c3a1;
+	min-height:170px;
+	font-size:16px;  
+}
+.TendeBox{
+	position:relative;
+	display:inline-block;
+	width:135px;
+	padding-bottom:20px;
+	margin:10px 10px;
+}
+.TendeBox h2{
+	height:55px;
+	overflow:hidden;
+}
+.TendeBox img{
+	border:1px solid #012544;
+	padding:10px;
+}
+.KontaktBox{
+	position:relative;
+	margin-bottom:50px;
+}
+#MapCanvas, #MapCanvas2 {
+    width:225px;
+    height:160px;
+	font-size:12px;
+	border:2px solid #214463;
+	float:left;
+	margin-right:20px;
+}
+#MapCanvas img, #MapCanvas2 img{
+	max-width:none;
+}
+#KontaktForma input[type=text], #KontaktForma textarea {
+	width: 97%;
+	border:2px solid #e8e8e8;
+	-moz-border-radius:5px;
+	border-radius:5px;
+    font-family: 'UbuntuRegular';
+	font-size:13px;
+	padding:2px 5px;
+	margin-bottom:10px;
+}
+#KontaktForma input[type=text]{
+	height:30px;
+}
+#KontaktForma #sigureca{
+	width: 30%;
+}
+#KontaktForma input[type=submit]{
+	padding:7px 40px;
+	margin-bottom:20px;
+    font-family: 'UbuntuRegular';
+	font-size:14px;
+	color:#012544;
+	cursor:pointer;
+	border:0px solid #000;
+	background:transparent url(/images/Posalji.jpg) no-repeat right center;
+	float:right;
+}
+footer{
+	position:relative;
+	width:100%;
+	min-height:150px;
+	margin:0px auto;
+	background:#012544 url(/images/FooterPozadina.png) repeat-x center top;
+	color:#fff;
+	font-size:14px;
+}
+footer .row{
+	position:relative;
+	padding-top:40px;
+}
+footer .threecol, .twocol{
+	position:relative;
+	border-right:1px solid #fff;
+	min-height:170px;
+}
+footer ul{
+	position:relative;
+	list-style:none;
+}
+footer a{
+	color:#fff;
+}
+footer #Newsletter input{
+	width:200px;
+	height:20px;
+	color:#2c499f;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	margin:10px 0;
+}
+footer #Newsletter .button{
+	width:19px; 
+	height:17px; 
+	background-image:url(/images/Posalji.png); 
+	background-repeat:no-repeat; 
+	cursor:pointer; 
+	background-color:transparent; 
+	border:0px;
+	margin-left:10px;
+}
+
+@media handheld, only screen and (max-width: 685px) {
+nav ul, header{
+	display:none;
+}
+#IndexSadrzaj{
+	margin-top:0px;
+}
+footer .threecol, .twocol{
+	border-right:0px solid #fff;
+}
+/*Meni mobilni*/
+.navMob {
+	width:100%;
+    list-style: none;
+     *zoom: 1;
+     background:#3b5669;
+	 display:inline-block;
+}
+.navMob:before,
+.navMob:after {
+    content: " "; 
+    display: table; 
+}
+.navMob:after {
+    clear: both;
+}
+.navMob ul {
+    list-style: none;
+   	display: block;
+    width: 100%;
+}
+.navMob a {
+    padding: 10px 15px;
+    color:#fff;
+}
+.navMob li {
+    position: relative;
+}
+.navMob > li {
+    float: none;
+    border-top: 1px solid #0a2234;
+}
+.navMob > li > .parent {
+    background-image: url(/images/DownArrow.png);
+    background-repeat: no-repeat;
+    background-position: right;
+	background-position: 95% 50%;
+}
+.navMob > li > a {
+    display: block;
+}
+.navMob li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.navMob > li.hover > ul {
+    left: 0;
+}
+.navMob li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.navMob li li a {
+    display: block;
+    background: #668aa4;
+    position: relative;
+    z-index:100;
+    border-top: 1px solid #175e4c;
+}
+.navMob li li li a {
+    background:#249578;
+    z-index:200;
+    border-top: 1px solid #1d7a62;
+}
+.navMob li li .parent {
+    background-image: url(/images/DownArrow.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+.navMob > li.hover > ul , .navMob li li.hover ul {
+    position: static;
+}    
+.navMob .active {
+    display: block;
+}
+}

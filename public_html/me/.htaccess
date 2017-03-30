@@ -1,0 +1,14 @@
+Options -Indexes
+
+RewriteEngine on
+
+RewriteRule ^about-us$ /o-nama.php
+RewriteRule ^captains-bridge$ /most.php
+RewriteRule ^out-the-porthole$ /porthole.php
+RewriteRule ^chefs-galley$ /chef.php
+RewriteRule ^contact$ /kontakt.php
+RewriteRule ^hr/thank-you$ /thank-you.php
+
+ErrorDocument 401 http://www.me.mysyachting.com/
+ErrorDocument 403 http://www.me.mysyachting.com/
+ErrorDocument 404 http://www.me.mysyachting.com/
